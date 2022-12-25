@@ -16,6 +16,10 @@ extern "C" {
 #error "Not going to implement it"
 #endif
 
+#if defined(__CYGWIN__)
+#undef _L
+#endif
+
 using namespace std;
 static const char* tname = "aho-corasick";
 
